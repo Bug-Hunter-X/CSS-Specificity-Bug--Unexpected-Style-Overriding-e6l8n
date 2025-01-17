@@ -1,0 +1,11 @@
+The following CSS code snippet demonstrates an uncommon error where the specificity of selectors is not properly understood, resulting in unexpected styling behavior.  The `div p` selector has higher specificity than the `p` selector, which means the styles defined for `div p` will override the styles defined for `p`, even though the latter is declared later. This can be difficult to track down because the code appears correct at first glance.
+
+```css
+p {
+  color: blue;
+}
+
+div p {
+  color: red;
+}
+```
